@@ -1,11 +1,11 @@
 Absolutely! Here's your ready-to-copy `README.md`:
 
 ```markdown
-# 🎓 ML Placement Predictor
+#  ML Placement Predictor
 
 A beginner-friendly toy machine learning project that predicts whether a student will be placed based on their **CGPA** and **IQ**. This project is designed for educational purposes to understand the basic ML workflow.
 
-## 📌 Features
+##  Features
 
 - Binary classification using Logistic Regression
 - Takes two input features: **CGPA** and **IQ**
