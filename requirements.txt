@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib.pyplot
+sklearn.model_selection
+sklearn.preprocessing
+sklearn.linear_model
+sklearn.metrics
+mlxtend.plotting
+pickle
