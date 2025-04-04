@@ -1,101 +1,128 @@
-Absolutely! Here's your ready-to-copy `README.md`:
+# ML Placement Predictor
 
-```markdown
-#  ML Placement Predictor
+A beginner-friendly toy machine learning project that predicts whether a student will be placed based on their **CGPA** and **IQ**. This project is designed for educational purposes and demonstrates a basic ML workflow using Python and scikit-learn.
 
-A beginner-friendly toy machine learning project that predicts whether a student will be placed based on their **CGPA** and **IQ**. This project is designed for educational purposes to understand the basic ML workflow.
+---
 
-##  Features
+## Features
 
-- Binary classification using Logistic Regression
-- Takes two input features: **CGPA** and **IQ**
-- Visualizes decision boundary
-- Saves trained model using `pickle`
+- Binary classification using Logistic Regression  
+- Two input features: `CGPA` and `IQ`  
+- Data visualization and decision boundary plotting  
+- Saves the trained model using `pickle`
 
-## 🧠 What You’ll Learn
+---
 
-- Data preprocessing and feature selection
-- Train-test splitting
-- Feature scaling using `StandardScaler`
-- Model training and accuracy evaluation
-- Visualizing decision boundaries
-- Saving and loading ML models
+## What You’ll Learn
 
-## 📁 Project Structure
+- How to load and preprocess data  
+- How to split data into training and test sets  
+- How to scale features using `StandardScaler`  
+- How to train a logistic regression model  
+- How to evaluate model accuracy  
+- How to visualize decision boundaries  
+- How to save and reuse a trained model
 
-```
+---
+
+## Project Structure
+
+```text
 placement-predictor/
-│
-├── toy_project.ipynb           # Jupyter notebook with full code
-├── placement.csv               # Dataset file (upload separately)
-├── model.pkl                   # Saved ML model
-├── requirements.txt            # List of required packages
-└── README.md                   # This file
+├── toy_project.ipynb       # Jupyter notebook with full code
+├── placement.csv           # Dataset file (should be added separately)
+├── model.pkl               # Saved machine learning model
+├── requirements.txt        # Python package dependencies
+└── README.md               # Project documentation (this file)
 ```
 
-## 🚀 Getting Started
+---
 
-1. **Clone the repository**
+## Getting Started
+
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/placement-predictor.git
-cd placement-predictor
+git clone https://github.com/Shivansh1205/toy-project
+cd toy-project
 ```
 
-2. **Install the dependencies**
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Run the notebook**
+### 3. Run the notebook
 
-Open `toy_project.ipynb` in Jupyter Notebook or Google Colab and run all the cells.
+Open `toy_project.ipynb` in Jupyter Notebook or Google Colab, and run all the cells step by step to:
 
-## 📊 Dataset Format
+- Load the data  
+- Train the model  
+- Evaluate performance  
+- Visualize results
+
+---
+
+## Dataset Format
+
+The dataset should be named `placement.csv` and contain the following columns:
 
 | cgpa | iq  | placement |
 |------|-----|-----------|
 | 8.5  | 120 | 1         |
 | 6.7  | 100 | 0         |
 
-- `placement` = `1` → Placed  
-- `placement` = `0` → Not Placed
+- `cgpa`: Student's CGPA  
+- `iq`: Student's IQ score  
+- `placement`: `1` if placed, `0` if not placed
 
-## 🖼️ Visualization
+---
 
-- Scatter plot showing CGPA vs IQ, colored by placement status
-- Decision boundary plot using `mlxtend.plot_decision_regions`
+## Visualization
 
-## ✅ Example Prediction
+- Scatter plot showing CGPA vs IQ, color-coded by placement  
+- Decision boundary plot using `mlxtend.plot_decision_regions` to visualize model classification zones
+
+---
+
+## Example Prediction
 
 ```python
 Input: CGPA = 8.5, IQ = 130  
-Output: Placed ✅
+Output: Placed
 ```
 
-## 📦 Requirements
+---
+
+## Requirements
 
 ```
-matplotlib
 numpy
 pandas
-scikit-learn
+matplotlib.pyplot
+sklearn.model_selection
+sklearn.preprocessing
+sklearn.linear_model
+sklearn.metrics
+mlxtend.plotting
+pickle
 ```
 
-You can install them using:
+Install them using:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 📚 Disclaimer
+To generate `requirements.txt` yourself:
 
-This is a toy ML project and should not be used for actual placement predictions. It is purely for learning and demonstration purposes.
+```bash
+pip freeze > requirements.txt
+```
 
 ---
 
-Feel free to ⭐ the repo if you found it helpful!
-```
+## Disclaimer
 
-Let me know if you'd like it formatted for Colab or need a badge section too!
+This is a toy ML project for educational purposes only. The model is trained on a small, synthetic dataset and is not intended for use in real-world placement scenarios.
